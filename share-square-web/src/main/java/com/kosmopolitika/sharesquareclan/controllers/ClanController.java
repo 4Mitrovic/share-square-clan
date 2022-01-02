@@ -31,7 +31,7 @@ public class ClanController {
 
     @RequestMapping("/find")
     public String findOwners(Model model){
-        model.addAttribute("owner", Clan.builder().build());
+        model.addAttribute("clan", Clan.builder().build());
         return "owners/findOwners";
     }
 
@@ -69,7 +69,7 @@ public class ClanController {
 
     @GetMapping("/new")
     public String initCreationForm(Model model) {
-        model.addAttribute("owner", Clan.builder().build());
+        model.addAttribute("clan", Clan.builder().build());
         return VIEWS_OWNER_CREATE_OR_UPDATE_FORM;
     }
 

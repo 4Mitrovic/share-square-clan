@@ -1,3 +1,4 @@
 com\kosmopolitika\sharesquareclan\ShareSquareClanApplication.class
 com\kosmopolitika\sharesquareclan\controllers\ClanController.class
 com\kosmopolitika\sharesquareclan\controllers\IndexController.class
+com\kosmopolitika\sharesquareclan\bootstrap\DataLoader.class

@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "clan")
+@Table(name = "owners")
 public class Clan extends Person{
 
     @Builder

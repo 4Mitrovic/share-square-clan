@@ -16,4 +16,9 @@ public class IndexController {
     public String oupsHandler(){
         return "notimplemented";
     }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
 }

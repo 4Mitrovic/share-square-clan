@@ -26,6 +26,10 @@
         <th>Telephone</th>
         <td th:text="*{telephone}" /></td>
       </tr>
+      <tr>
+        <th>Type</th>
+        <td th:text="*{clanType}" /></td>
+      </tr>
     </table>
   
     <a th:href="@{{id}/edit(id=${clan.id})}" class="btn btn-default">Edit

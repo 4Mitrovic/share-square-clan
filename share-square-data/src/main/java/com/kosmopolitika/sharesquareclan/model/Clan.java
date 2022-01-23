@@ -5,9 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Setter
 @Getter
@@ -33,4 +31,8 @@ public class Clan extends Person{
 
     @Column(name = "telephone")
     private String telephone;
+
+    @Column(name = "type")
+    @Enumerated(EnumType.STRING)
+    private ClanType clanType;
 }

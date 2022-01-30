@@ -23,6 +23,10 @@
             <option th:each="clanType : ${T(com.kosmopolitika.sharesquareclan.model.ClanType).values()}"
                     th:value="${clanType}" th:text="${clanType.displayValue}"></option>
           </select>
+          <input
+            th:replace="~{fragments/inputField :: input ('Datum prijema', 'joinDate', 'date')}"  />
+          <input
+            th:replace="~{fragments/inputField :: input ('Datum uplate', 'lastPayDate', 'date')}"  />
         </div>
       </div>
     </div>

@@ -30,6 +30,14 @@
         <th>Type</th>
         <td th:text="*{clanType}" /></td>
       </tr>
+      <tr>
+        <th>Join Date</th>
+        <td th:text="*{joinDate}" /></td>
+      </tr>
+      <tr>
+        <th>Last Pay Date</th>
+        <td th:text="*{lastPayDate}" /></td>
+      </tr>
     </table>
   
     <a th:href="@{{id}/edit(id=${clan.id})}" class="btn btn-default">Edit
